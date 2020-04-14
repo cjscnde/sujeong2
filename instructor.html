@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <!-- -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <title>수정 보살</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/codingBooster.css">
+    </head>
+    <body>
+        <!-- 인용구 마진 패딩 활용가능 -->
+        <style type="text/css">
+            blockquote {
+                background: #f9f9f9;
+                border-left: 10px solid #cccccc;
+                margin: 1.5em 10px;
+                padding: 0.5em 10px;
+                quotes: "\201c""\201d""\2018""\2019";
+            }
+            blockquote:before {
+                color: #cccccc;
+                content: open-quote;
+                font-size: 3em;
+                line-height: 0.1em;
+                margin-left: 0.25em;
+                vertical-align: -0.4em;
+            }
+            blockquote:after {
+                color: #cccccc;
+                content: close-quote;
+                font-size: 3em;
+                line-height: 0.1em;
+                margin-left: 0.25em;
+                vertical-align: -0.4em;
+            }
+        </style>
+        <!-- 인용구 끝-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">수정보살</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="so.html">소개<span class="sr-only"></span></a></li>
+                        <li><a href="instructor.html">강사진</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">강의<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="lecture.html?lectureName=basic">사주 기초 강의</a></li>
+                                <li><a href="lecture.html?lectureName=gosu">사주 고급 강의</a></li>
+                            </ul>
+                        </li>
+                    </ul>                    
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="내용을 입력하세요.">     
+                        </div>
+                        <button type="submit" class="btn btn-default">검색</button>
+                    </form>
+                    <form class="nav navbar-nav navbar-right">
+                        <a class="navbar-brand" href="loginForm.html">회원가입&로그인</a>
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-15">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <span class="glyphicon glyphicon-tags"></span>
+                                &nbsp;&nbsp;네지 강사
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/네지.jpg" alt="강사 이미지">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">네 지</h4><br>
+                                    대표 강사 입니다.<br>
+                                    강사명 이나 내용은 아직 미정이라 허구의 인물로 대체해서 넣은것 입니다.<br>
+                                    오해 없으시길 바랍니다.
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>강사명</th>
+                                    <th>강의 번호</th>
+                                    <th>강의 제목</th>
+                                    <th>강의 날짜</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>네 지</td>
+                                    <td>1</td>
+                                    <td><a href="lecture.html?lectreName=basic">사주 기초 강좌</a></td>
+                                    <td>2020-04-13</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       
+                        <!-- 인용구 태그--><!--
+                        <div class="panel-footer">
+                            <blockquote>&nbsp;&nbsp;Do And Forget!</blockquote>
+                        </div>
+                        <!-- 인용구 끝-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-15">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <span class="glyphicon glyphicon-tags"></span>
+                                &nbsp;&nbsp;마다라 강사
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="img/마다라.gif" alt="강사 이미지">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">마다라</h4><br>
+                                    대표 강사 입니다.<br>
+                                    강사명 이나 내용은 아직 미정이라 허구의 인물로 대체해서 넣은것 입니다.<br>
+                                    오해 없으시길 바랍니다.
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>강사명</th>
+                                    <th>강의 번호</th>
+                                    <th>강의 제목</th>
+                                    <th>강의 날짜</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>마다라</td>
+                                    <td>2</td>
+                                    <td><a href="lecture.html?lectreName=gosu">사주 고급 강좌</a></td>
+                                    <td>2020-04-13</td>
+                                </tr>
+                            </tbody>
+                        </table>
+     <footer style="background-color: #000000; color: #ffffff;">
+        <div class="container">
+            <br>
+            <div class="row">
+                    <div class="col-sm-2" style="text-align: center;"><h5>Copyright &copy; 2020</h5><h5>송재만(Jaeman Song)</h5></div>
+                    <div class="col-sm-4"><h4>사이트 소개</h4><p>해당 웹 페이지는 부트스트랩과 각종 정보를 혼합하여 만든 테스트페이지 입니다.</p></div>
+                    <div class="col-sm-2"><h4 style="text-align: center;">내비게이션</h4>
+                        <div class="list-group">
+                            <a href="index.html" class="list-group-item">홈</a>
+                            <a href="so.html" class="list-group-item">소개</a>
+                            <a href="instructor.html" class="list-group-item">강사진</a>
+                            <a href="lecture.html" class="list-group-item">강의</a>
+                        </div>
+                    </div>
+                <div class="col-sm-2"><h4 style="text-align: center;">SNS</h4>
+                    <div class="list-group">
+                        <a href="mailto:ifsayde@gmail.com" class="list-group-item">이메일</a>
+                        <a href="noname.html" class="list-group-item">포트폴리오페이지</a>
+                        <a href="juso.html" class="list-group-item">찾아오시는길</a>
+                    </div>
+                </div>
+                <div class="col-sm-2"><h4 style="text-align: center;"><span class="glyphicon glyphicon-ok"></span>&nbsp;by 송재만</h4>
+                    <br><center>
+                    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></center>
+                </div>
+        </div>
+    </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="js/bootstrap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        <title>수정 보살</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/codingBooster.css">
+    </head>
+    <body>
+        <style type="text/css">
+            .jumbotron {
+                background-image: url('img/back2.jpg');
+                background-size: cover;
+                text-shadow: black 0.2em 0.2em 0.2em;
+                color: white;
+        }
+        </style><!-- 점보트론은 인덱스에서만 사용하기때문에 인덱스 내부에 만들어서 사용-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">수정보살</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="so.html">보살님소개<span class="sr-only"></span></a></li>
+                        <li><a href="instructor.html">강사진소개</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">강의 맛보기<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="lecture.html?lectureName=basic">사주 기초 강의</a></li>
+                                <li><a href="lecture.html?lectureName=gosu">사주 고급 강의</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">판매상품</a></li>
+                    </ul>                    
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="내용을 입력하세요.">     
+                        </div>
+                        <button type="submit" class="btn btn-default">검색</button>
+                    </form>
+                    <form class="nav navbar-nav navbar-right">
+                        <a class="navbar-brand" href="loginForm.html">회원가입&로그인</a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+ 		<div class="jumbotron">
+ 			<h1 class="text-center">      를 소개합니다.</h1>
+ 			<p class="text-center">블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라블라.</p>
+ 			<p class="text-center"><a class="btn btn-primary btn-lg" href="lecture.html" role="button">강의 들으러 가기</a></p>	 
+         </div>
+         <div class="row">
+             <div class="col-sm-4">
+                 <h4>ㅇㅇㅇㅇ특징1</h4>
+                 <p>ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                 <p><a class="btn btn-default" data-target="#modal" data-toggle="modal">자세히 알아보기</a></p>
+            </div>
+            <div class="col-sm-4">
+                <h4>ㅇㅇㅇㅇ특징2</h4>
+                <p>ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+                <p><a class="btn btn-default" href="instructor.html">자세히 알아보기</a></p>
+           </div>
+           <div class="col-sm-4">
+            <h4>ㅇㅇㅇㅇ특징3</h4>
+            <p>ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
+            <p><a class="btn btn-default" href="lecture.html">자세히 알아보기</a></p>
+            </div> 
+        </div>
+        <hr>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="penel-title"><span class="glyphicon glyphicon-pencil"></span>
+                &nbsp;&nbsp;최신 강의 목록</h3>
+            </div>
+            <div class="panel-body">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="lecture.html?lectureName=basic"><img class="media-object" src="./img/yin-yang.png" alt="사주 기초 강의 이미지"></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="lecture.html?lectureName=basic">사주 기초 강의</a>&nbsp;<span class="badge">New</span></h4>
+                        기초 사주 강의 입니다.
+                        처음 사주를 접하는 입문자가 듣기에 적합한 강의입니다.
+                        강의료는 XXX,XXX,XXX원이며 기초 사주 강좌는 총 XX강으로 구성됩니다.
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="media">
+                    <div class="media-left">
+                        <a href="lecture.html?lectureName=gosu"><img class="media-object" src="./img/yin-yang2.png" alt="사주 고급 강의 이미지"></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="lecture.html?lectureName=gosu">사주 고급 강의</a>&nbsp;<span class="badge">New</span></h4>
+                        고급 사주 강의 입니다.
+                        사주에 정통한 고급자가 듣기에 적합한 강의입니다.
+                        강의료는 XXX,XXX,XXX원이며 기초 사주 강좌는 총 XX강으로 구성됩니다.
+                        
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+     </div>
+     <footer style="background-color: #000000; color: #ffffff;">
+        <div class="container">
+            <br>
+            <div class="row">
+                    <div class="col-sm-2" style="text-align: center;"><h5>Copyright &copy; 2020</h5><h5>송재만(Jaeman Song)<hr>무단 도용 엄금 합니다.</h5></div>
+                    <div class="col-sm-6"><h4>사이트 소개</h4><p>해당 웹 페이지는 부트스트랩과 각종 정보를 혼합하여 만든 테스트페이지 입니다.</p></div>
+
+                <div class="col-sm-2"><h4 style="text-align: center;">SNS</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">종합연락처</a>
+                        <a href="juso.html" class="list-group-item">찾아오시는길</a>
+                    </div>
+                </div>
+                <div class="col-sm-2"><h4 style="text-align: center;">저작권</h4>
+                    <!--저작권 관련 태그-->
+                    Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                    <!--저작권 관련 태그 끝-->
+                </center>
+                </div>
+        </div>
+    </footer>
+    <div class="row"><!-- id는 고유의 이름이라 여러개 사용하고 싶으면 modal1 2 식으로 아이디 부여해서 사용할것-->
+        <div class="modal" id="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        ㅇㅇㅇㅇ특징
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body" style="text-align: center;">
+                        저희의 특징은 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ<br>
+                        특히 ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ<br><br>
+                        <img src="./img/won.jpg" id="imagepreview" style="width: 256px; height: 256px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="js/bootstrap.js"></script>
+    </body>
+</html>
