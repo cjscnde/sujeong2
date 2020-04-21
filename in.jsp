@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,16 +9,8 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/codingBooster.css">
     </head>
-    <body>
-        <style type="text/css">
-            .jumbotron {
-                background-image: url('./img/배경.jpg');
-                background-size: cover;
-                text-shadow: black 0.2em 0.2em 0.2em;
-                color: white;
-        }
-        </style><!-- 점보트론은 인덱스에서만 사용하기때문에 인덱스 내부에 만들어서 사용-->
-       <nav class="navbar navbar-default">
+<body>
+<nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -63,71 +57,25 @@
                 </div>
             </div>
         </nav>
-
-        <div class="container">
- 		<div class="jumbotron">
- 			<h1 class="text-center">수정보살을 소개합니다.</h1>
- 			<p class="text-center">1990년을 시작으로 현재 30년 이상의 다양하고 박식한 노하우와 경력을 가지고 계신 수정보살님의 홈페이지 입니다.</p>
-            <p class="text-center"><a class="btn btn-primary btn-lg" href="so.html" role="button">보살님소개</a></p>
-            <br>	 
-            <p class="text-center"><a class="btn btn-primary btn-lg" href="juso.html" role="button">찾아오시는길</a></p>
-         </div>
-         <!--롤 메뉴 3개
-         <div class="row">
-             <div class="col-sm-4">
-                 <h4>ㅇㅇㅇㅇ특징1</h4>
-                 <p>ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
-                 <p><a class="btn btn-default" data-target="#modal" data-toggle="modal">자세히 알아보기</a></p>
-            </div>
-            <div class="col-sm-4">
-                <h4>ㅇㅇㅇㅇ특징2</h4>
-                <p>ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
-                <p><a class="btn btn-default" href="instructor.html">자세히 알아보기</a></p>
-           </div>
-           <div class="col-sm-4">
-            <h4>ㅇㅇㅇㅇ특징3</h4>
-            <p>ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</p>
-            <p><a class="btn btn-default" href="lecture.html">자세히 알아보기</a></p>
-            </div> 
-        </div>
-        -->
         <hr>
-        <div class="panel panel-primary">
-            <div class="panel-heading">
-                <h3 class="penel-title"><span class="glyphicon glyphicon-pencil"></span>
-                &nbsp;&nbsp;최신 강의 목록</h3>
-            </div>
-            <div class="panel-body">
-                <div class="media">
-                    <div class="media-left">
-                        <a href="lecturebasic.html"><img class="media-object" src="./img/yin-yang.png" alt="사주 기초 강의 이미지"></a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading"><a href="lecturebasic.html">사주 기초 강의</a>&nbsp;<span class="badge">New</span></h4>
+        <%
+    request.setCharacterEncoding("utf-8");
 
-                        [준비중] 기초 사주 강의 입니다.
-                        처음 사주를 접하는 입문자가 듣기에 적합한 강의입니다.
-                        강의료는 XXX,XXX,XXX원이며 기초 사주 강좌는 총 XX강으로 구성됩니다.
-                        
-                    </div>
-                </div>
-                <hr>
-                <div class="media">
-                    <div class="media-left">
-                        <a href="lecturegosu.html"><img class="media-object" src="./img/yin-yang2.png" alt="사주 고급 강의 이미지"></a>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading"><a href="lecturegosu.html">사주 고급 강의</a>&nbsp;<span class="badge">New</span></h4>
-                        [준비중] 고급 사주 강의 입니다.
-                        사주에 정통한 고급자가 듣기에 적합한 강의입니다.
-                        강의료는 XXX,XXX,XXX원이며 기초 사주 강좌는 총 XX강으로 구성됩니다.
-                        
-                    </div>
-                </div>
-            </div>
-            <hr>
-        </div>
-     </div>
+    String email1 = request.getParameter("email1");
+    String pw1 = request.getParameter("pw1");
+    //영균씨 if문 코드
+    if (email1.equals("ifsay8@gmail.com") && pw1.equals("1234"))  {
+    	out.println(email1 + "님 안녕하세요<br/>");
+    	out.println("환영합니다! <p> 당신의 비밀번호는 암호화 되어있습니다.");
+    }
+    else  {
+    	out.println("ID 또는 PW가 일치하지 않습니다.");
+    }
+    //영균씨 if문 코드 끝
+    
+%>
+<hr>
+        
      <footer style="background-color: #000000; color: #ffffff;">
         <div class="container">
             <br>
